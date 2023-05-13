@@ -12,6 +12,9 @@ const formateMessage = require("./messages1");
 const server = http.createServer(app);
 const io = socketio(server);
 
+app.get("/", (req, res) => {
+   res.send("Hello from server")
+})
 
 // const defaultNPS = io.of("/");
 
